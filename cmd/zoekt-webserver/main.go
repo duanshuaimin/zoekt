@@ -33,7 +33,7 @@ import (
 
 	"github.com/google/zoekt/build"
 	"github.com/google/zoekt/shards"
-	"github.com/google/zoekt/web"
+	"github.com/duanshuaimin/zoekt/web"
 )
 
 const logFormat = "2006-01-02T15-04-05.999999999Z07"
