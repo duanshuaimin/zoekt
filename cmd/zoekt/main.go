@@ -24,9 +24,9 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/duanshuaimin/zoekt"
-	"github.com/duanshuaimin/zoekt/query"
-	"github.com/duanshuaimin/zoekt/shards"
+	"github.com/google/zoekt"
+	"github.com/google/zoekt/query"
+	"github.com/google/zoekt/shards"
 )
 
 const CONTEXT = 20
