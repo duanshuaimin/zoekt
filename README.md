@@ -11,26 +11,26 @@ INSTRUCTIONS
 
 Downloading:
 
-    go get github.com/google/zoekt/
+    go get github.com/duanshuaimin/zoekt/
 
 Indexing:
 
-    go install github.com/google/zoekt/cmd/zoekt-index
+    go install github.com/duanshuaimin/zoekt/cmd/zoekt-index
     $GOPATH/bin/zoekt-index .
 
 Searching
 
-    go install github.com/google/zoekt/cmd/zoekt
+    go install github.com/duanshuaimin/zoekt/cmd/zoekt
     $GOPATH/bin/zoekt 'ngram f:READ'
 
 Indexing git repositories:
 
-    go install github.com/google/zoekt/cmd/zoekt-git-index
+    go install github.com/duanshuaimin/zoekt/cmd/zoekt-git-index
     $GOPATH/bin/zoekt-git-index -branches master,stable-1.4 -prefix origin/ .
 
 Indexing repo repositories:
 
-    go install github.com/google/zoekt/cmd/zoekt-{repo-index,mirror-gitiles}
+    go install github.com/duanshuaimin/zoekt/cmd/zoekt-{repo-index,mirror-gitiles}
     zoekt-mirror-gitiles -dest ~/repos/ https://gfiber.googlesource.com
     zoekt-repo-index \
        -name gfiber \
@@ -42,7 +42,7 @@ Indexing repo repositories:
 
 Starting the web interface
 
-    go install github.com/google/zoekt/cmd/zoekt-webserver
+    go install github.com/duanshuaimin/zoekt/cmd/zoekt-webserver
     $GOPATH/bin/zoekt-webserver -listen :6070
 
 A more organized installation on a Linux server should use a systemd unit file,
